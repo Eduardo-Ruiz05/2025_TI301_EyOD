@@ -45,3 +45,8 @@ public class Arreglos {
         System.out.println(Arreglos.problemaJuan(args));
     } 
 }
+
+/*Como ejecutar en cmd:
+* cd [RUTA DEL PROYECTO]
+* java [PACKAGE.CLASE{main}] < [ARCHIVO_A_LEER.TIPO_DE_ARCHIVO]
+*/
