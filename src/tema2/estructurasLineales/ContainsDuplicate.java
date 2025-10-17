@@ -21,7 +21,7 @@ public class ContainsDuplicate {
         int m = 10;     //Rango
         List<Integer> nums = generateNums(n,m);
         print(nums);
-        System.out.println("");
+        System.out.println("Contains Duplicate:\n" + containsDuplicate(nums));
     }
     
     // 2. Algoritmo a resolver
