@@ -10,14 +10,32 @@
 */
 package tema2.estructurasLineales;
 
+import java.util.ArrayList;
 import java.util.List;
 
 
 public class ContainsDuplicate {
     public static void main(String[] args) {
         // 1. Datos
-        // 2. Algoritmo a resolver
+        int n = 10;     //Cantidad de números
+        int m = 10;     //Rango
+        List<Integer> nums = generateNums(n,m);
+        print(nums);
+        System.out.println("");
+    }
+    
+    // 2. Algoritmo a resolver
+    public static void print(List<Integer> nums) {
+        System.out.println(nums.toString());
+    }
+    
+    public static List<Integer> generateNums(int n, int m) {
+        List<Integer> nums = new ArrayList<>();
         
+        for(int i = 0; i < n; i++) 
+            nums.add((int) (Math.random()*m));
+            
+        return nums;
     }
     
     public static boolean containsDuplicate(List <Integer> nums) {
