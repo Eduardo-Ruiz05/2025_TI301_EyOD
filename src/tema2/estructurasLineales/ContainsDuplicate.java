@@ -24,7 +24,7 @@ public class ContainsDuplicate {
         System.out.println("Contains Duplicate:\n" + containsDuplicate(nums));
     }
     
-    // 2. Algoritmo a resolver
+    // 2. Algoritmo a resolver (Fuerza Bruta)
     public static void print(List<Integer> nums) {
         System.out.println(nums.toString());
     }
