@@ -27,13 +27,13 @@ public class GraphAdjacencyList {
         graph.add(new ArrayList<>());
     }
     
-    public void addEdge(int u, int v){
+    public void addEdge(int u, int v) {
         graph.get(u).add(v);
         graph.get(v).add(u);
         
     }
     
-    public void print(){
+    public void print() {
         int node = 0;
         for(var al:graph){
             System.out.print(node + ":");
@@ -47,12 +47,25 @@ public class GraphAdjacencyList {
         
     }
     
-    public int depth(int p){
+    public int depth(int p) { 
         //is root
         if(p == 0)
             return 0;
         return 1 + depth( graph.get(p).get(0) );
     }
     
-    
+    public void hasChildren() {
+        int node = 0;
+        for(var al:graph){
+            System.out.print(node + ":");
+            for(var i:al){
+                if(i != 0 && i == node-1){
+                    System.out.print(i + " ");
+                    System.out.print(": True");
+                }
+            }
+            node++;
+            System.out.println("");
+        }
+    }
 }

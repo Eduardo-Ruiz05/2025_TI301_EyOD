@@ -25,6 +25,7 @@ public class GraphAdjacencyListTest {
         tree.addEdge(2, 6);
         
         tree.print();
+        tree.hasChildren();
         
         System.out.println("Depth: " + tree.depth(5));
     }
